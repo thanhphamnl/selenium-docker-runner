@@ -3,12 +3,12 @@ pipeline{
 	stages{
 		stage("Pull Latest Image"){
 			steps{
-				sh "docker pull vinsdocker/selenium-docker"
+				sh "docker pull hocchogioi/selenium-docker"
 			}
 		}
 		stage("Start Grid"){
 			steps{
-				sh "docker-compose up -d hub firefox"
+				sh "docker-compose up -d hub firefox chrome"
 			}
 		}
 		stage("Run Test"){
