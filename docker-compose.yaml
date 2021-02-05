@@ -22,7 +22,7 @@ services:
       - firefox
     environment:
       - HUB_HOST=hub
-      - BROWSER=firefox
+      - BROWSER=chrome
       - MODULE=search-module.xml
     volumes:
       - ./output/search-result:/usr/share/udemy/test-output      
@@ -33,7 +33,7 @@ services:
       - firefox
     environment:
       - HUB_HOST=hub
-      - BROWSER=chrome
+      - BROWSER=firefox
       - MODULE=book-flight-module.xml
     volumes:
       - ./output/book-result:/usr/share/udemy/test-output   
